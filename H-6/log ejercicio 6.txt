@@ -1,0 +1,38 @@
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 6/git_h_6 (main)
+$ git clone https://github.com/lodash/lodash.git                                                        Cloning into 'lodash'...
+remote: Enumerating objects: 69897, done.
+remote: Total 69897 (delta 0), reused 0 (delta 0), pack-reused 69897
+Receiving objects: 100% (69897/69897), 46.46 MiB | 5.83 MiB/s, done.
+Resolving deltas: 100% (48017/48017), done.
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 6/git_h_6 (main)
+$
+
+
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 6/git_h_6/lodash (master)
+$ git branch -a
+* master
+  remotes/origin/3.10.1-post
+  remotes/origin/4.17
+  remotes/origin/4.17.15-post
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/amd
+  remotes/origin/es
+  remotes/origin/master
+  remotes/origin/npm
+  remotes/origin/npm-packages
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 6/git_h_6/lodash (master)
+$
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,173 @@
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ git init
+Initialized empty Git repository in D:/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5/.git/
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ git remote add origin https://github.com/Egrillet89/git_h-5.git
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ git remote -v
+origin  https://github.com/Egrillet89/git_h-5.git (fetch)
+origin  https://github.com/Egrillet89/git_h-5.git (push)
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ touch inicio.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ git add .
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ git commit -m "feat:add inicio.txt"
+[main (root-commit) d8659b5] feat:add inicio.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 inicio.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 227 bytes | 227.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Egrillet89/git_h-5.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ touch foo.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ touch bar.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ git branch feature/actividades
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ git switch feature/actividades
+Switched to branch 'feature/actividades'
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (feature/actividades)
+$ git add .
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (feature/actividades)
+$ git status
+On branch feature/actividades
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   bar.txt
+        new file:   foo.txt
+
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (feature/actividades)
+$ git commit -m "feat: add 2 files foo.txt and bar.txt"
+[feature/actividades 27770d5] feat: add 2 files foo.txt and bar.txt
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bar.txt
+ create mode 100644 foo.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (feature/actividades)
+$ touch qux.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (feature/actividades)
+$ git add .
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (feature/actividades)
+$ git commit --amend -m "feat:add 3 files foo.txt, bar.txt, qux.txt"
+[feature/actividades 22c46aa] feat:add 3 files foo.txt, bar.txt, qux.txt
+ Date: Mon Aug 21 19:19:50 2023 -0400
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bar.txt
+ create mode 100644 foo.txt
+ create mode 100644 qux.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (feature/actividades)
+$ git push -u origin feature/actividades
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 285 bytes | 285.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature/actividades' on GitHub by visiting:
+remote:      https://github.com/Egrillet89/git_h-5/pull/new/feature/actividades
+remote:
+To https://github.com/Egrillet89/git_h-5.git
+ * [new branch]      feature/actividades -> feature/actividades
+branch 'feature/actividades' set up to track 'origin/feature/actividades'.
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (feature/actividades)
+$ git swtich main
+git: 'swtich' is not a git command. See 'git --help'.
+
+The most similar command is
+        switch
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (feature/actividades)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ git branch hotfix/registroDeUsuario
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ git switch hotfix/registroDeUsuario
+Switched to branch 'hotfix/registroDeUsuario'
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (hotfix/registroDeUsuario)
+$ touch registro_de_usuarios.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (hotfix/registroDeUsuario)
+$ git add .
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (hotfix/registroDeUsuario)
+$ git status
+On branch hotfix/registroDeUsuario
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   registro_de_usuarios.txt
+
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (hotfix/registroDeUsuario)
+$ git commit -m "hotfix: add registro_de_usuarios.txt"
+[hotfix/registroDeUsuario bb0837a] hotfix: add registro_de_usuarios.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 registro_de_usuarios.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (hotfix/registroDeUsuario)
+$ git push -u origin hotfix/registroDeUsuario
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 288 bytes | 288.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'hotfix/registroDeUsuario' on GitHub by visiting:
+remote:      https://github.com/Egrillet89/git_h-5/pull/new/hotfix/registroDeUsuario
+remote:
+To https://github.com/Egrillet89/git_h-5.git
+ * [new branch]      hotfix/registroDeUsuario -> hotfix/registroDeUsuario
+branch 'hotfix/registroDeUsuario' set up to track 'origin/hotfix/registroDeUsuario'.
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (hotfix/registroDeUsuario)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ git push origin --delete feature/actividades
+To https://github.com/Egrillet89/git_h-5.git
+ - [deleted]         feature/actividades
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$ git branch -a
+  feature/actividades
+  hotfix/registroDeUsuario
+* main
+  remotes/origin/hotfix/registroDeUsuario
+  remotes/origin/main
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 5 (main)
+$

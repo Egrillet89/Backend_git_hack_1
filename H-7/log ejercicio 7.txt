@@ -1,0 +1,138 @@
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git init
+Initialized empty Git repository in D:/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7/.git/
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git remote add origin https://github.com/Egrillet89/git_h-7.git
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git remote -v
+origin  https://github.com/Egrillet89/git_h-7.git (fetch)
+origin  https://github.com/Egrillet89/git_h-7.git (push)
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ touch foo.txt bar.txt qux.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bar.txt
+        foo.txt
+        qux.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git add .
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   bar.txt
+        new file:   foo.txt
+        new file:   qux.txt
+
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Egrillet89/git_h-7.git'
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git branch -M main
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Egrillet89/git_h-7.git'
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ ^C
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git coomit -m "feat: add 3 files"
+git: 'coomit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git commit -m "feat: add 2 files"
+[main (root-commit) a561aa2] feat: add 2 files
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bar.txt
+ create mode 100644 foo.txt
+ create mode 100644 qux.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 236 bytes | 236.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Egrillet89/git_h-7.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git rm --cached foo.txt
+rm 'foo.txt'
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    foo.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        foo.txt
+
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git commit -m "feat: remove foo.txt"
+[main 018c03d] feat: remove foo.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 foo.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 236 bytes | 236.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Egrillet89/git_h-7.git
+   a561aa2..018c03d  main -> main
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 7 (main)
+$

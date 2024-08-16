@@ -1,0 +1,155 @@
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git init
+Initialized empty Git repository in D:/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3/.git/
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git remote add origin https://github.com/Egrillet89/git_h-3.git
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git remote -v
+origin  https://github.com/Egrillet89/git_h-3.git (fetch)
+origin  https://github.com/Egrillet89/git_h-3.git (push)
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ touch menu-de-comidas
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ ls -l
+total 0
+-rw-r--r-- 1 Eleazar Grillet 197121 0 Aug 21 10:57 menu-de-comidas
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        menu-de-comidas
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git add .
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   menu-de-comidas
+
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git commit -m "feat: add menu-de-comidas.txt"
+[main (root-commit) 12242c8] feat: add menu-de-comidas.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 menu-de-comidas
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git log --oneline
+12242c8 (HEAD -> main) feat: add menu-de-comidas.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 237 bytes | 237.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Egrillet89/git_h-3.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git branch feature/agregar^Cidas
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git branch feature/agregarComidas
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git switch feature/agregarComidas
+Switched to branch 'feature/agregarComidas'
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (feature/agregarComidas)
+$ echo -e "arroz,pan,pizza" >> menu_de_comidas.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (feature/agregarComidas)
+$ cat menu_de_comidas.txt
+arroz,pan,pizza
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (feature/agregarComidas)
+$ git status
+On branch feature/agregarComidas
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        menu_de_comidas.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (feature/agregarComidas)
+$ git add .
+warning: in the working copy of 'menu_de_comidas.txt', LF will be replaced by CRLF the next time Git touches it
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (feature/agregarComidas)
+$ git status
+On branch feature/agregarComidas
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   menu_de_comidas.txt
+
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (feature/agregarComidas)
+$ git commit -m "feat: add content in menu_de_comidas.txt"
+[feature/agregarComidas 4ec09af] feat: add content in menu_de_comidas.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 menu_de_comidas.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (feature/agregarComidas)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git branch
+  feature/agregarComidas
+* main
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git merge feature/agregarComidas
+Updating 12242c8..4ec09af
+Fast-forward
+ menu_de_comidas.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 menu_de_comidas.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 332 bytes | 332.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Egrillet89/git_h-3.git
+   12242c8..4ec09af  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git branch
+  feature/agregarComidas
+* main
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git branch -D feature/agregarComidas
+Deleted branch feature/agregarComidas (was 4ec09af).
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$ git branch
+* main
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 3 (main)
+$

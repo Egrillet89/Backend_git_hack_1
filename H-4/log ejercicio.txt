@@ -1,0 +1,242 @@
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git ini
+git: 'ini' is not a git command. See 'git --help'.
+
+The most similar commands are
+        init
+        gui
+        init-db
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git init
+Initialized empty Git repository in D:/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4/.git/
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git remote add origin https://github.com/Egrillet89/git_h-4.git
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git remote -v
+origin  https://github.com/Egrillet89/git_h-4.git (fetch)
+origin  https://github.com/Egrillet89/git_h-4.git (push)
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ touch foo.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ touch bar.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ touch qux.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ ls -l
+total 0
+-rw-r--r-- 1 Eleazar Grillet 197121 0 Aug 21 19:06 bar.txt
+-rw-r--r-- 1 Eleazar Grillet 197121 0 Aug 21 19:06 foo.txt
+-rw-r--r-- 1 Eleazar Grillet 197121 0 Aug 21 19:06 qux.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bar.txt
+        foo.txt
+        qux.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git add .
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   bar.txt
+        new file:   foo.txt
+        new file:   qux.txt
+
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git reset -- qux.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   bar.txt
+        new file:   foo.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        qux.txt
+
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git reset --
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bar.txt
+        foo.txt
+        qux.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ touch octocat.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bar.txt
+        foo.txt
+        octocat.txt
+        qux.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git ad . git status git commit -m "feat: add 4 files"
+git: 'ad' is not a git command. See 'git --help'.
+
+The most similar commands are
+        add
+        am
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git add . git status git commit -m "feat: add 4 files"
+error: unknown switch `m'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bar.txt
+        foo.txt
+        octocat.txt
+        qux.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git add .
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   bar.txt
+        new file:   foo.txt
+        new file:   octocat.txt
+        new file:   qux.txt
+
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git commit -m "feat: add 4 files"
+[main (root-commit) 7aa9db3] feat: add 4 files
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bar.txt
+ create mode 100644 foo.txt
+ create mode 100644 octocat.txt
+ create mode 100644 qux.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ touch delta.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git log -- oneline
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git log --oneline
+7aa9db3 (HEAD -> main) feat: add 4 files
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git add delta.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git commit -m "feat:add 5 files"
+[main e8a4c22] feat:add 5 files
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 delta.txt
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git log --oneline
+e8a4c22 (HEAD -> main) feat:add 5 files
+7aa9db3 feat: add 4 files
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 433 bytes | 433.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Egrillet89/git_h-4.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Eleazar Grillet@ELEAZAR-GRILLET MINGW64 /d/CURSO FULL STACK DEV/Actividad 1 Git/ejercicio 4 (main)
+$
